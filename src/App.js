@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Welcome from './Welcome';
+import Usercard from './Usercard';
+import Counter from './Counter';
+import Likes from './LikeButton';
+import Timer from './Timer';
+import Randomuser from './Randomuser';
+import UserDashboard from './UserDashboard';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <Welcome username="Goenca" />
+      <Usercard name = "lund" age = "lauda" email = "lussan"></Usercard>
+      <Usercard name = "chut" age = "chutiya" email = "chutpagla"></Usercard>
+      <Counter></Counter>
+      <Likes></Likes>
+      <Timer></Timer>
+      <Randomuser></Randomuser> */}
+      <UserDashboard></UserDashboard>
     </div>
+    
   );
 }
 
